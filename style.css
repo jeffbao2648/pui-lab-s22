@@ -1,1 +1,19 @@
+body {
+    margin: 0;
+    color: tartan red;
+    font-family: 'Roboto', sans-serif;
+}
 
+/*********** HEADER ************/
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: teal;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+    margin: 0;
+}
