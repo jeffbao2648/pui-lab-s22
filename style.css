@@ -29,6 +29,29 @@ h1 {
     color: red;
 }
 
+.list {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+}
+
+.list-title {
+    margin-left: 20px;
+}
+
+.list a {
+    color: red;
+    text-decoration: none;
+}
+
+/* Home Page Selection */
+header a {
+    color: white;
+    text-decoration: none; 
+}
+
 /*********** Course Registration ************/
 
 #course-catalog {
@@ -150,10 +173,6 @@ body h2 {
   border-radius: 30px;
 }
 
-/* Home Page Selection */
-header a {
-    color: white;
-    text-decoration: none; 
-}
+
 
 
