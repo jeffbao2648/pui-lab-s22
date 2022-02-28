@@ -21,11 +21,32 @@ h1 {
 /*********** LIST ************/
 #registration-option {
     margin: 0 auto;
-    width: 80%;
-    padding-top: 30px;
+    width: 30%;
+    padding-top: 100px;
+    font-size: 20px;
 }
+
+.list {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+}
+
+.list-title {
+    margin-left: 20px;
+}
+
+.list a {
+    color: red;
+    text-decoration: none;
+}
+
 
 header a {
     color: white;
     text-decoration: none; 
 }
+
+
