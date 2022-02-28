@@ -20,7 +20,7 @@ h1 {
     margin: 0;
 }
 
-/*********** LIST ************/
+/*********** Home Page ************/
 #registration-option {
     margin: 0 auto;
     width: 30%;
@@ -28,6 +28,8 @@ h1 {
     font-size: 20px;
     color: red;
 }
+
+/*********** Course Registration ************/
 
 #course-catalog {
   margin-left: 450px;
@@ -125,6 +127,7 @@ button {
   display: block;
   width: 78px;
 }
+
 body h3 {
   margin-top: -10px;
   margin-right: -240px;
@@ -133,36 +136,21 @@ body h3 {
   
 }
 
+<!-- Class Information -->
 body p {
   font-size: 15px;
   color: black;
 }
+
 body h2 {
   font-size: 30px;
 }
 
-
 .rounded {
   border-radius: 30px;
 }
-.list {
-    text-align: center;
-    padding: 20px;
-    margin-bottom: 10px;
-    background-color: #eeeeee;
-    border: 1px solid #cccccc;
-}
 
-.list-title {
-    margin-left: 20px;
-}
-
-.list a {
-    color: red;
-    text-decoration: none;
-}
-
-
+<!-- Home Page Selection -->
 header a {
     color: white;
     text-decoration: none; 
