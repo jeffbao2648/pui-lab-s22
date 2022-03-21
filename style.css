@@ -20,7 +20,7 @@ h1 {
     margin: 0;
 }
 
-/*********** LIST ************/
+/*********** Course Registration ************/
 #registration-option {
     margin: 0 auto;
     width: 30%;
@@ -84,7 +84,6 @@ h1 {
   margin-left: 190px;
   width: 20%;
   margin-top: 15px;
-  padding: 20px;
   padding-right: 250px;
   padding-bottom: 150px;
   font-size: 35px;
@@ -120,6 +119,18 @@ h1 {
   width: 150px;
   margin-top: 20px;
   
+}
+
+/*********** Course Registration ************/
+
+.weekday {
+  padding-right: 2px;
+  background-color: #972822;
+}
+
+.tuesday {
+  padding-right: 2px;
+  background-color: #972822;
 }
 
 button {
@@ -183,5 +194,4 @@ header a {
     color: white;
     text-decoration: none; 
 }
-
 
