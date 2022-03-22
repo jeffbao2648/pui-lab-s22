@@ -1,49 +1,53 @@
 <!DOCTYPE html>
 <html>
-  
-<head>
-  <title>Course Tracker</title>
-  <meta charset="UTF-8">
-  <!-- styles -->
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
-</head>
+  <head>
+    <title>Course Tracker</title>
+    <meta charset="UTF-8">
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="main.js" type="text/javascript"></script>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+  </head>
 
-<body>
-  <header> 
-    <h1>Course Registration</h1>
-  </header>
-  <!-- Course Catalog Search -->
-  <div id="course-catalog" class="rounded">
-    <h2 style="text-align: center;">Course Catalog Search</h2>
-    <h4 style="text-align: left;">Course ID Search:</h4>
-    <div style = "position:relative; bottom: 40px;">
-      <input type="text"> </input>
-      <button id="search"> Search </button>
+  <body>
+    <header> 
+      <h1>Course Registration</h1>
+    </header>
+    <!-- Course Catalog Search -->
+    <div id="course-catalog" class="rounded">
+      <h2 style="text-align: center;">Course Catalog Search</h2>
+      <h4> Total Courses Registered: </h4>
+      <h4 id="num-courses"></h4>
+      <h4 style="text-align: left;">Course ID Search:</h4>
+      <div style = "position:relative; bottom: 40px;">
+        <input id="text-input" type="text"> </input>
+        <button id="search"> Search </button>
+      <button id="quick-add" class="rounded" onClick="addNewClass()">Quick Add </button>
+      </div>
     </div>
-  </div>
-  <!-- Search Results -->
-  <div id="search-result" class="rounded">
-    <h3>05-430/PUI &emsp; NSH 1305 &emsp;Section A</h3>
-    <p>Description: This course is combines lecture, and an intensive programming lab...</p>
-    <button id="add-drop1"> Add/Drop </button>
-    <button id="learn-more1"> Learn More </button>
-    <h3> <br>05-430/PUI &emsp; NSH 1305 &emsp;Section B</h3>
-    <p>Description: This course is combines lecture, and an intensive programming lab...</p>
-    <button id="add-drop1"> Add/Drop </button>
-    <button id="learn-more1"> Learn More </button>
-  </div>
-  <h1 style="padding-left: 300px"> Waitlist History </h1>
-  <!-- Waitlist History -->
-  <div id="waitlist" class="rounded">
-    <h3 style="text-align: justify;"> 70-257 &emsp;&emsp;TEP 2700 &emsp;&emsp; Section B </h3>
-    <button id="drop"> Drop </button>
-  </div>
-  <button id="view-course" onClick=document.location="academic_schedule.html"> View Academic Schedule</button>
-  <button id="academic-sched" onClick=document.location="academic_calender.html"> View Course Calender</button>
+    <!-- Search Results -->
+    <div id="search-result" class="rounded">
+      <h3>05-430/PUI &emsp; NSH 1305 &emsp;Section A</h3>
+      <p>Description: This course is combines lecture, and an intensive programming lab...</p>
+      <button id="add-drop1"> Add/Drop </button>
+      <button id="learn-more1"> Learn More </button>
+      <h3> <br>05-430/PUI &emsp; NSH 1305 &emsp;Section B</h3>
+      <p>Description: This course is combines lecture, and an intensive programming lab...</p>
+      <button id="add-drop1"> Add/Drop </button>
+      <button id="learn-more1"> Learn More </button>
+    </div>
+    <h1 style="padding-left: 300px"> Waitlist History </h1>
+    <!-- Waitlist History -->
+    <div id="waitlist" class="rounded">
+      <h3 style="text-align: justify;"> 70-257 &emsp;&emsp;TEP 2700 &emsp;&emsp; Section B </h3>
+      <button id="drop"> Drop </button>
+    </div>
+    <button id="view-course" href="academic_schedule.html"> View Academic Schedule</button>
+    <button id="academic-sched" href="academic_calender.html"> View Course Calender</button>
 
-</body>
-  
-  
+
+  </body>
+
+
 </html>
