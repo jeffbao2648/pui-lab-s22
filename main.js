@@ -8,6 +8,7 @@ function addNewClass() {
   for (let i = 0; i<currCoursesID.length; i++) {
     if (classInput.value == currCoursesID[i]) {
       currNumCourses += 1;
+      console.log(currNumCourses);
       document.getElementById("num-courses").innerHTML = currNumCourses;
       currRegCourses.push(classInput.value);
       console.log(currRegCourses);
@@ -21,10 +22,11 @@ function addNewClass() {
 function dropClass() {
   let classInput = document.getElementById("text-input");
   for (let i = 0; i<currRegCourses.length; i++) {
-    if (classInput,value == currRegCourses[i]){
+    if (classInput.value == currRegCourses[i]){
       currNumCourses -= 1; 
-      document.getElementById("num-courses").innterHTML = currNumCourses; 
-      currRegCourses.remove(classInput.value);
+      console.log(currNumCourses);
+      document.getElementById("num-courses").innerHTML = currNumCourses;
+      currRegCourses.splice(i,1);
       console.log(currRegCourses);
       alert("Class Dropped!");
       return;
