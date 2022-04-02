@@ -42,3 +42,6 @@ function CourseInfo(ID, name, section, info) {
   this.info = info; 
 }
 
+let PUI = new CourseInfo("05-430", "Programmable User Interface", "A and B", "Description: This course is combines lecture, and an intensive programming lab...")
+
+
