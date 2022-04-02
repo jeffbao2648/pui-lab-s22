@@ -34,3 +34,11 @@ function dropClass() {
   }
   alert("Invalid Class!");
 }
+
+function CourseInfo(ID, name, section, info) {
+  this.ID = ID; 
+  this.name = name; 
+  this.section = section; 
+  this.info = info; 
+}
+
