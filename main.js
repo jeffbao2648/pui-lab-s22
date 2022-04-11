@@ -70,15 +70,23 @@ function learnMore() {
   // using local storage instead
   // localStorage.setItem --> set variable for index class 
   // local.Storage.getItem --> gets the index of the searched class
-  
-  return; 
+  for (let i = 0; i<currCourses.length; i++) {
+    if (classInput.value == currCourses[i].ID) {
+      localStorage.setItem("currCourseIdx", i); 
+    }
+  }
 }
 
 
-
-
 function onLoad() {
-  document.getElementById("searched-course").textContent = PUI.ID;
+  var currCourseIdx = localStorage.getItem("currCourseIdx");
+  document.getElementById("detail-course-ID").textContent = currCourses[i].ID;
+  
+  document.getElementById("detail-course-name").textContent = currCourses[i].name;
+  
+  document.getElementById("detail-course-section").textContent = currCourses[i].section;
+  
+  document.getElementById("detail-extra-info").textContent = currCourses[i].extra_detail;
 }
 
 
