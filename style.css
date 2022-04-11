@@ -21,88 +21,122 @@ h1 {
 }
 
 /*********** Course Registration ************/
-#registration-option {
-    margin: 0 auto;
-    width: 30%;
-    padding-top: 100px;
-    font-size: 20px;
-    color: red;
+
+.course-reg-page {
+  display: grid;
+  column-gap: 10px;
 }
 
-#course-catalog {
-  margin-left: 250px;
-  width: 20%;
-  margin-top: 30px;
-  padding: 20px;
-  padding-bottom: 10px;
-  font-size: 35px;
+.rounded {
+  border-radius: 30px;
+}
+
+.center {
+  text-align: center;
+}
+
+.catalog-shift {
+  margin-left: 10px;
+}
+
+#search-input {
+  position: relative;
+  top: -30px;
+}
+
+#search {
+  position: relative;
+  padding: 2px;
+  margin-left: 85px;
+  top: -25px;
+}
+
+
+#catalog-search{
+  grid-row-start: 1; 
+  grid-row-end: 2; 
+  grid-column-start: 1; 
+  grid-column-end: 4;
+  margin: 250px 50px;
+  width: 30%;
+  padding: 20px 0px;
+  font-size: 25px;
   color: white;
   background-color: #972822;
-  border: 1px solid ##972822;
-}
-
-#search-result{
-  margin-left: 800px;
-  width: 20%;
-  margin-top: -280px;
-  padding: 20px;
-  padding-right: 300px;
-  padding-bottom: 50px;
-  font-size: 35px;
-  color: white;
-  background-color: white;
-  border: 1px solid ##972822;
-}
-
-#add-drop1 {
-  padding: 2px;
-  border-radius: 10px;
-  margin-left: 450px;
-  margin-top: -55px;
-  color: white;
-  background-color: red;
-}
-
-#learn-more1 {
-  padding: 2px;
-  border-radius: 10px;
-  margin-left: 450px;
-  margin-top: 10px;
-  color: white;
-  background-color: red;
   
 }
 
-
-#search {
-  padding: 2px;
-  border-radius: 10px;
-  margin-left: 75px;
-}
-
-#quick-add {
-  padding: 2px;
-  margin-left: 200px;
-  margin-top: -23px;
-}
-
-#waitlist {
-  margin-left: 190px;
-  width: 20%;
-  margin-top: 15px;
-  padding-right: 250px;
-  padding-bottom: 150px;
-  font-size: 35px;
-  color: white;
+#search-result{
+  grid-row-start: 1; 
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin: 100px 120px;
+  margin-left: 400px;
+  width: 75%;
+  padding: -10px 75px;
+  padding-left: -100px;
   background-color: white;
-  border: 1px solid ##972822;
+  color: black;
 }
 
-#drop {
-  padding: 2px;
+#detail-page {
+  margin: 75px 20px;
+  padding: 250px 75px; 
+  background-color: white;
+}
+
+#searched-course-ID{
+  margin: 15px 20px;
+}
+
+#searched-course-name {
+  margin: 20px 20px;
+}
+
+#searched-course-section {
+  margin: 25px 20px;
+}
+
+#searched-course-info {
+  margin: 30px 20px;
+}
+
+#addClass {
+  margin-left: 400px;
+  margin-top: -145px;
   color: white;
   background-color: red;
+  display: none;
 }
+
+#dropClass {
+  margin-left: 400px;
+  margin-top: 10px;
+  color: white;
+  background-color: red;
+  display: none;
+}
+
+#learnMore{
+  padding: 2px;
+  margin-left: 550px;
+  margin-top: 10px;
+  color: white;
+  background-color: red;
+  display: none;
+}
+
+#regCourses{
+  font-size: 15px;
+  width: 40%;
+  background-color: #972822;
+  color: white; 
+  margin: 0px 20px; 
+}
+
+
+
 
 #view-course {
   margin-left: 1000px;
@@ -114,36 +148,6 @@ h1 {
   
 }
 
-#academic-sched {
-  margin-left: 1000px;
-  color: white;
-  background-color: #972822;
-  font-size: 15px;
-  width: 150px;
-  margin-top: 20px;
-  
-}
-
-/*********** Academic Schedule************/
-
-
-.course {
-  padding: 10px;
-  background-color: #972822;
-  margin-top: 10px;
-}
-
-/*********** Academic Calender ************/
-
-#monday {
-  padding-right: 2px;
-  background-color: #972822;
-}
-
-#tuesday {
-  padding-right: 2px;
-  background-color: #972822;
-}
 
 button {
   display: block;
@@ -151,13 +155,6 @@ button {
 }
 
 
-body h3 {
-  margin-top: -10px;
-  margin-right: -240px;
-  font-size: 33px;
-  color: black;
-  
-}
 
 body h2 {
   font-size: 35px;
@@ -171,18 +168,11 @@ body h4 {
  
 }
 
-body p {
-  font-size: 15px;
-  color: black;
-}
 
 .container {
     display: flex;
 }
 
-.rounded {
-  border-radius: 30px;
-}
 
 .list {
     text-align: center;
