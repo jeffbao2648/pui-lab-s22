@@ -14,8 +14,10 @@ let Opti = new CourseInfo("70-257", "Optimization for Business", "Section: A and
 let BusComp = new CourseInfo("70-110", "Business Computing", "Section: A and B", "Description: Students will learn how individuals and organizations use computing technologies...", "Description: Students will learn how individuals and organizations use computing technologies to support and improve their businesses. At an individual level, students will build their skills with Microsoft Excel and other personal productivity tools. At an organizational level, the class looks at ways in which businesses of all sizes and types leverage computing technologies to run their businesses more efficiently, make better business decisions, and create new business opportunities. This course is reserved for first-year Business students; others may enroll by special permission from the UBA office only.");
 
 let currCourses = [PUI, Opti, BusComp];
-let currRegCourses = [];
-let currNumCourses = 0;
+var currRegCourses = [];
+var currRegCourses = localStorage.setItem("currRegCourses", JSON.stringify(currRegCourses));
+var currNumCourses = 0;
+var currNumCourses = localStorage.setItem("currNumCourses", currNumCourses);
 document.getElementById("num-courses").innerHTML = currNumCourses;
 
 function searchClass() {
@@ -35,12 +37,16 @@ function searchClass() {
 
 function addNewClass() {
   let classInput = document.getElementById("search-input");
+  var currRegCourses = JSON.parse(localStorage.getItem("currRegCourses"));
   for (let i = 0; i<currCourses.length; i++) {
     if (classInput.value == currCourses[i].ID) {
+      var currNumCourses = localStorage.getItem("currNumCourses");
       currNumCourses += 1;
       console.log(currNumCourses);
       document.getElementById("num-courses").innerHTML = currNumCourses;
       currRegCourses.push(classInput.value);
+      var currRegCourses = localStorage.setItem("currRegCourses", JSON.stringify(currRegCourses));
+      var currNumCourses = localStorage.setItem("currNumCourses", currNumCourses);
       console.log(currRegCourses);
       alert("Class added!");
       return;
@@ -51,12 +57,16 @@ function addNewClass() {
 
 function dropClass() {
   let classInput = document.getElementById("search-input");
+  var currRegCourses = JSON.parse(localStorage.getItem("currRegCourses"));
   for (let i = 0; i<currRegCourses.length; i++) {
     if (classInput.value == currRegCourses[i]){
+      var currNumCourses = localStorage.getItem("currNumCourses");
       currNumCourses -= 1;
       console.log(currNumCourses);
       document.getElementById("num-courses").innerHTML = currNumCourses;
       currRegCourses.splice(i,1);
+      var currRegCourses = localStorage.setItem("currRegCourses", JSON.stringify(currRegCourses));
+      var currNumCourses = localStorage.setItem("currNumCourses", currNumCourses);
       console.log(currRegCourses);
       alert("Class Dropped!");
       return;
