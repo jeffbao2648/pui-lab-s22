@@ -74,6 +74,8 @@ function learnMore() {
   for (let i = 0; i<currCourses.length; i++) {
     if (classInput.value == currCourses[i].ID) {
       localStorage.setItem("currCourseIdx", i);
+      console.log(i);
+      console.log(currCourseIdx);
     }
   }
 }
