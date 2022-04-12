@@ -1,8 +1,8 @@
 function CourseInfo(ID, name, section, info, detail) {
-  this.ID = ID; 
-  this.name = name; 
-  this.section = section; 
-  this.info = info; 
+  this.ID = ID;
+  this.name = name;
+  this.section = section;
+  this.info = info;
   this.extra_detail = detail;
 }
 
@@ -16,7 +16,7 @@ let BusComp = new CourseInfo("70-110", "Business Computing", "Section: A and B",
 let currCourses = [PUI, Opti, BusComp];
 let currRegCourses = [];
 let currNumCourses = 0;
-document.getElementById("num-courses").innerHTML = currNumCourses;
+document.getElementById("num-courses") = currNumCourses;
 
 function searchClass() {
   let classInput = document.getElementById("search-input");
@@ -43,7 +43,7 @@ function addNewClass() {
       currRegCourses.push(classInput.value);
       console.log(currRegCourses);
       alert("Class added!");
-      return; 
+      return;
     }
   }
   alert("Invalid Class!")
@@ -53,7 +53,7 @@ function dropClass() {
   let classInput = document.getElementById("search-input");
   for (let i = 0; i<currRegCourses.length; i++) {
     if (classInput.value == currRegCourses[i]){
-      currNumCourses -= 1; 
+      currNumCourses -= 1;
       console.log(currNumCourses);
       document.getElementById("num-courses").innerHTML = currNumCourses;
       currRegCourses.splice(i,1);
@@ -68,11 +68,12 @@ function dropClass() {
 function learnMore() {
   // very similar to searchClass
   // using local storage instead
-  // localStorage.setItem --> set variable for index class 
+  // localStorage.setItem --> set variable for index class
   // local.Storage.getItem --> gets the index of the searched class
+  let classInput = document.getElementById("search-input");
   for (let i = 0; i<currCourses.length; i++) {
     if (classInput.value == currCourses[i].ID) {
-      localStorage.setItem("currCourseIdx", i); 
+      localStorage.setItem("currCourseIdx", i);
     }
   }
 }
@@ -81,12 +82,10 @@ function learnMore() {
 function onLoad() {
   var currCourseIdx = localStorage.getItem("currCourseIdx");
   document.getElementById("detail-course-ID").textContent = currCourses[i].ID;
-  
+
   document.getElementById("detail-course-name").textContent = currCourses[i].name;
-  
+
   document.getElementById("detail-course-section").textContent = currCourses[i].section;
-  
+
   document.getElementById("detail-extra-info").textContent = currCourses[i].extra_detail;
 }
-
-
