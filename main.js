@@ -16,7 +16,7 @@ let BusComp = new CourseInfo("70-110", "Business Computing", "Section: A and B",
 let currCourses = [PUI, Opti, BusComp];
 let currRegCourses = [];
 let currNumCourses = 0;
-document.getElementById("num-courses").innerHTML = currNumCourses;
+document.getElementById("num-courses")= currNumCourses;
 
 function searchClass() {
   let classInput = document.getElementById("search-input");
@@ -70,6 +70,7 @@ function learnMore() {
   // using local storage instead
   // localStorage.setItem --> set variable for index class 
   // local.Storage.getItem --> gets the index of the searched class
+  let classInput = document.getElementById("search-input");
   for (let i = 0; i<currCourses.length; i++) {
     if (classInput.value == currCourses[i].ID) {
       localStorage.setItem("currCourseIdx", i); 
