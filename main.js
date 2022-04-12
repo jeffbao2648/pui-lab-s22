@@ -16,7 +16,7 @@ let BusComp = new CourseInfo("70-110", "Business Computing", "Section: A and B",
 let currCourses = [PUI, Opti, BusComp];
 let currRegCourses = [];
 let currNumCourses = 0;
-document.getElementById("num-courses") = currNumCourses;
+document.getElementById("num-courses").innerHTML = currNumCourses;
 
 function searchClass() {
   let classInput = document.getElementById("search-input");
