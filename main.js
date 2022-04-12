@@ -16,7 +16,7 @@ let BusComp = new CourseInfo("70-110", "Business Computing", "Section: A and B",
 let currCourses = [PUI, Opti, BusComp];
 let currRegCourses = [];
 let currNumCourses = 0;
-document.getElementById("num-courses") = currNumCourses;
+document.getElementById("num-courses").textContent = currNumCourses;
 
 function searchClass() {
   let classInput = document.getElementById("search-input");
@@ -81,11 +81,11 @@ function learnMore() {
 
 function onLoad() {
   var currCourseIdx = localStorage.getItem("currCourseIdx");
-  document.getElementById("detail-course-ID").textContent = currCourses[i].ID;
+  document.getElementById("detail-course-ID").textContent = currCourses[currCourseIdx].ID;
 
-  document.getElementById("detail-course-name").textContent = currCourses[i].name;
+  document.getElementById("detail-course-name").textContent = currCourses[currCourseIdx].name;
 
-  document.getElementById("detail-course-section").textContent = currCourses[i].section;
+  document.getElementById("detail-course-section").textContent = currCourses[currCourseIdx].section;
 
-  document.getElementById("detail-extra-info").textContent = currCourses[i].extra_detail;
+  document.getElementById("detail-extra-info").textContent = currCourses[currCourseIdx].extra_detail;
 }
