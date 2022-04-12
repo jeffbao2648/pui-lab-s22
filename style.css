@@ -122,6 +122,13 @@ h1 {
   color: black;
 }
 
+#back {
+  background-color: red;
+  color: white;
+  font-size: 15px;
+  margin: 30px 20px;
+}
+
 #addClass {
   margin-left: 400px;
   margin-top: -145px;
