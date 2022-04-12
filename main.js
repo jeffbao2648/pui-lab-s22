@@ -81,13 +81,12 @@ function learnMore() {
 
 function onLoad() {
   var currCourseIdx = localStorage.getItem("currCourseIdx");
-  document.getElementById("detail-course-ID").textContent = currCourses[i].ID;
+  document.getElementById("detail-course-ID").textContent = currCourses[currCourseIdx].ID;
   
-  document.getElementById("detail-course-name").textContent = currCourses[i].name;
+  document.getElementById("detail-course-name").textContent = currCourses[currCourseIdx].name;
   
-  document.getElementById("detail-course-section").textContent = currCourses[i].section;
+  document.getElementById("detail-course-section").textContent = currCourses[currCourseIdx].section;
   
-  document.getElementById("detail-extra-info").textContent = currCourses[i].extra_detail;
+  document.getElementById("detail-extra-info").textContent = currCourses[currCourseIdx].extra_detail;
 }
-
 
