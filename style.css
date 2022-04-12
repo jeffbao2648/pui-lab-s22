@@ -53,9 +53,9 @@ h1 {
 
 
 #catalog-search{
-  grid-row-start: 1; 
-  grid-row-end: 2; 
-  grid-column-start: 1; 
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
   grid-column-end: 4;
   margin: 250px 50px;
   width: 30%;
@@ -63,11 +63,11 @@ h1 {
   font-size: 25px;
   color: white;
   background-color: #972822;
-  
+
 }
 
 #search-result{
-  grid-row-start: 1; 
+  grid-row-start: 1;
   grid-row-end: 3;
   grid-column-start: 2;
   grid-column-end: 3;
@@ -82,7 +82,7 @@ h1 {
 
 #detail-page {
   margin: 75px 20px;
-  padding: 250px 75px; 
+  padding: 250px 75px;
   background-color: white;
 }
 
@@ -100,6 +100,26 @@ h1 {
 
 #searched-course-info {
   margin: 30px 20px;
+}
+
+#detail-course-ID{
+  margin: 15px 20px;
+  color: black;
+}
+
+#detail-course-name {
+  margin: 20px 20px;
+  color: black;
+}
+
+#detail-course-section {
+  margin: 25px 20px;
+  color: black;
+}
+
+#detail-extar-info {
+  margin: 30px 20px;
+  color: black;
 }
 
 #addClass {
@@ -131,8 +151,8 @@ h1 {
   font-size: 15px;
   width: 40%;
   background-color: #972822;
-  color: white; 
-  margin: 0px 20px; 
+  color: white;
+  margin: 0px 20px;
 }
 
 
@@ -145,7 +165,7 @@ h1 {
   background-color: #972822;
   font-size: 15px;
   width: 150px;
-  
+
 }
 
 
@@ -165,7 +185,7 @@ body h2 {
 body h4 {
   font-size: 30px;
   flex: 1;
- 
+
 }
 
 
@@ -194,6 +214,5 @@ body h4 {
 
 header a {
     color: white;
-    text-decoration: none; 
+    text-decoration: none;
 }
-
