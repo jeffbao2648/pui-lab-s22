@@ -97,7 +97,15 @@ function learnMore() {
   }
 }
 
+function onLoadDetail() {
+  document.getElementById("reg-course-ID").textContent = PUI.ID;
 
+  document.getElementById("reg-course-name").textContent = PUI.name;
+
+  document.getElementById("reg-course-section").textContent = PUI.section;
+
+
+}
 function onLoad() {
   var currCourseIdx = localStorage.getItem("currCourseIdx");
   document.getElementById("detail-course-ID").textContent = currCourses[currCourseIdx].ID;
